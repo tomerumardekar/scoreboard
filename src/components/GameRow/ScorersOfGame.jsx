@@ -15,7 +15,7 @@ export default function ({ teamName, scorers }) {
         <Typography variant="h6" sx={{ fontWeight: "bold" }}>
           {teamName}
         </Typography>
-        {scorers.map((scorer, index) => (
+        {scorers?.map((scorer, index) => (
           <Typography variant="subtitle2" key={index}>
             {scorer.name} ({scorer.minute}')
           </Typography>
